@@ -1,0 +1,49 @@
+{
+  "name": "notepad",
+  "private": true,
+  "version": "0.0.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "electron:dev": "electron .",
+    "electron:build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.notepad.app",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ]
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.3",
+    "@mui/material": "^6.4.3",
+    "electron": "^34.1.1",
+    "electron-builder": "^25.1.8",
+    "monaco-editor": "^0.52.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-monaco-editor": "^0.58.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "vite": "^6.1.0"
+  }
+}
